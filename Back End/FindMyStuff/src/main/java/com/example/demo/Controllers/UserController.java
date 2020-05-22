@@ -6,10 +6,7 @@ import com.example.demo.database.UserRepository;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.HttpClientErrorException;
 
 @RestController
@@ -37,6 +34,13 @@ public class UserController {
     {
         //TODO
         return null;
+    }
+
+    @GetMapping("/test")
+    @ResponseBody
+    public User test(@RequestParam(name = "name", required = false, defaultValue = "stranger") String name)
+    {
+        return new User(name, "john");
     }
 
     private boolean userExists(String username)
