@@ -2,6 +2,7 @@ package com.example.frontlyendly;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     TextView editusername;
     TextView editpassword;
+    String errorMessage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +25,12 @@ public class MainActivity extends AppCompatActivity {
     {
         String username = getUsername();
         String password = getPassword();
-        System.out.print(username + " " + password);
-        login(username, password);
+        Intent intent = new Intent(this, HomeActivity.class);
+        if (login(username, password)) {
+            startActivity(intent);
+        } else {
+            showErrorMesssage();
+        }
     }
 
     public String getUsername(){
@@ -35,7 +41,15 @@ public class MainActivity extends AppCompatActivity {
         return editpassword.getText().toString();
     }
 
-    public void login(String username, String password){
+    public boolean login(String username, String password){
         //perform login action
+        return true;
     }
+
+    public void showErrorMesssage()
+    {
+
+    }
+
+
 }
