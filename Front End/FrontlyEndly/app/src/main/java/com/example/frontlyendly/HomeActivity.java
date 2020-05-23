@@ -19,28 +19,28 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         textView = (TextView)findViewById(R.id.test_text);
-//        RequestQueue queue = Volley.newRequestQueue(this);
-//        String url ="192.168.1.6:3306/test";
-//
-//        // Request a string response from the provided URL.
-//        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-//                new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        // Display the first 500 characters of the response string.
-//                        textView.setText("Response is: "+ response.substring(0,500));
-//                    }
-//                }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error) {
-//                TextView textView =  (TextView)findViewById(R.id.test_text);
-//                textView.setText("That didn't work!");
-//            }
-//        });
-//
-//// Add the request to the RequestQueue.
-//        queue.add(stringRequest);
-//
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url ="192.168.1.6:3306/test";
+
+        // Request a string response from the provided URL.
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        // Display the first 500 characters of the response string.
+                        textView.setText("Response is: "+ response.substring(0,500));
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                TextView textView =  (TextView)findViewById(R.id.test_text);
+                textView.setText("That didn't work!");
+            }
+        });
+
+// Add the request to the RequestQueue.
+        queue.add(stringRequest);
+
     }
 
 }
