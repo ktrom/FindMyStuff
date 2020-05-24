@@ -44,6 +44,12 @@ public class UserController {
         return j;
     }
 
+    @GetMapping("/test2")
+    @ResponseBody
+    public String test2() throws JSONException {
+        return "ronson";
+    }
+
     private boolean userExists(String username)
     {
         return !(userRepository.findByUsername(username) == null);
