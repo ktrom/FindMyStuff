@@ -35,12 +35,12 @@ public class UserController {
         //TODO
         return null;
     }
-
+    //@RequestParam(name = "name", required = false, defaultValue = "stranger") String name
     @GetMapping("/test")
     @ResponseBody
-    public User test(@RequestParam(name = "name", required = false, defaultValue = "stranger") String name)
+    public String test()
     {
-        return new User(name, "john");
+        return "john";
     }
 
     private boolean userExists(String username)

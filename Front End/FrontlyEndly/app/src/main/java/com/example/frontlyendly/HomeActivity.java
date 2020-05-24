@@ -20,27 +20,25 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         textView = (TextView)findViewById(R.id.test_text);
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="192.168.1.6:3306/test";
+        String url ="localhost:8080/test";
+        // Instantiate the RequestQueue.
 
         // Request a string response from the provided URL.
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                new Response.Listener<String>() {
+                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
+                        new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                // Display the first 500 characters of the response string.
+                                textView.setText("Response is: "+ response.substring(0,500));
+                            }
+                        }, new Response.ErrorListener() {
                     @Override
-                    public void onResponse(String response) {
-                        // Display the first 500 characters of the response string.
-                        textView.setText("Response is: "+ response.substring(0,500));
+                    public void onErrorResponse(VolleyError error) {
+                        textView.setText(error.getMessage());
                     }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                TextView textView =  (TextView)findViewById(R.id.test_text);
-                textView.setText("That didn't work!");
-            }
-        });
+                });
 
-// Add the request to the RequestQueue.
-        queue.add(stringRequest);
-
+        // Add the request to the RequestQueue.
+                queue.add(stringRequest);
     }
-
 }
