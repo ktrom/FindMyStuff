@@ -38,9 +38,10 @@ public class UserController {
     //@RequestParam(name = "name", required = false, defaultValue = "stranger") String name
     @GetMapping("/test")
     @ResponseBody
-    public String test()
-    {
-        return "john";
+    public JSONObject test() throws JSONException {
+        JSONObject j = new JSONObject();
+        j.put("name", "john");
+        return j;
     }
 
     private boolean userExists(String username)

@@ -9,8 +9,10 @@ import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import org.json.JSONObject;
 
 public class HomeActivity extends AppCompatActivity {
     TextView textView;
@@ -19,26 +21,25 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         textView = (TextView)findViewById(R.id.test_text);
-        RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="localhost:8080/test";
-        // Instantiate the RequestQueue.
+        String url = "http://192.168.1.6:8080/test";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
 
-        // Request a string response from the provided URL.
-                StringRequest stringRequest = new StringRequest(Request.Method.GET, url,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                // Display the first 500 characters of the response string.
-                                textView.setText("Response is: "+ response.substring(0,500));
-                            }
-                        }, new Response.ErrorListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        textView.setText("Response: " + response.toString());
+                    }
+                }, new Response.ErrorListener() {
+
                     @Override
                     public void onErrorResponse(VolleyError error) {
                         textView.setText(error.getMessage());
+
                     }
                 });
 
-        // Add the request to the RequestQueue.
-                queue.add(stringRequest);
+// Access the RequestQueue through your singleton class.
+        MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest);
+
     }
 }

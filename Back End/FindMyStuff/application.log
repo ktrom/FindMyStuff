@@ -1,95 +1,22 @@
-2020-05-23 22:30:54.923  INFO 15756 --- [main] com.example.demo.FindMyStuffApplication  : Starting FindMyStuffApplication on LAPTOP-27VT8PQ1 with PID 15756 (started by ktrom in C:\Users\ktrom\Desktop\GitHub\FindMyStuff\FindMyStuff\Back End\FindMyStuff)
-2020-05-23 22:30:54.939  INFO 15756 --- [main] com.example.demo.FindMyStuffApplication  : No active profile set, falling back to default profiles: default
-2020-05-23 22:30:56.030  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-05-23 22:30:56.131  INFO 15756 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81ms. Found 1 JPA repository interfaces.
-2020-05-23 22:30:56.945  INFO 15756 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-23 22:30:58.296  INFO 15756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-23 22:30:58.327  INFO 15756 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-23 22:30:58.329  INFO 15756 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-05-23 22:30:58.817  INFO 15756 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-23 22:30:58.818  INFO 15756 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3780 ms
-2020-05-23 22:30:59.378  INFO 15756 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-05-23 22:30:59.669  INFO 15756 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-05-23 22:31:00.131  INFO 15756 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-05-23 22:31:00.435  INFO 15756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-05-23 22:31:00.946  INFO 15756 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-05-23 22:31:01.031  INFO 15756 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-05-23 22:31:02.023  INFO 15756 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.example.demo.database.User (class must be instantiated by Interceptor)
-2020-05-23 22:31:02.941  INFO 15756 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-05-23 22:31:02.956  INFO 15756 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-05-23 22:31:04.095  WARN 15756 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-05-23 22:31:04.850  INFO 15756 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-23 22:31:05.510  INFO 15756 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-23 22:31:05.514  INFO 15756 --- [main] com.example.demo.FindMyStuffApplication  : Started FindMyStuffApplication in 11.396 seconds (JVM running for 12.326)
-2020-05-23 22:33:03.825  INFO 19236 --- [main] com.example.demo.FindMyStuffApplication  : Starting FindMyStuffApplication on LAPTOP-27VT8PQ1 with PID 19236 (started by ktrom in C:\Users\ktrom\Desktop\GitHub\FindMyStuff\FindMyStuff\Back End\FindMyStuff)
-2020-05-23 22:33:03.831  INFO 19236 --- [main] com.example.demo.FindMyStuffApplication  : No active profile set, falling back to default profiles: default
-2020-05-23 22:33:05.019  INFO 19236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-05-23 22:33:05.142  INFO 19236 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 89ms. Found 1 JPA repository interfaces.
-2020-05-23 22:33:05.856  INFO 19236 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-23 22:33:06.619  INFO 19236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-23 22:33:06.634  INFO 19236 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-23 22:33:06.635  INFO 19236 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-05-23 22:33:06.907  INFO 19236 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-23 22:33:06.907  INFO 19236 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2994 ms
-2020-05-23 22:33:07.169  INFO 19236 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-05-23 22:33:07.332  INFO 19236 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-05-23 22:33:07.557  INFO 19236 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-05-23 22:33:07.775  INFO 19236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-05-23 22:33:08.098  INFO 19236 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-05-23 22:33:08.159  INFO 19236 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-05-23 22:33:08.780  INFO 19236 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.example.demo.database.User (class must be instantiated by Interceptor)
-2020-05-23 22:33:09.282  INFO 19236 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-05-23 22:33:09.299  INFO 19236 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-05-23 22:33:10.347  WARN 19236 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-05-23 22:33:10.755  INFO 19236 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-23 22:33:11.539  INFO 19236 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-23 22:33:11.543  INFO 19236 --- [main] com.example.demo.FindMyStuffApplication  : Started FindMyStuffApplication in 8.422 seconds (JVM running for 9.362)
-2020-05-23 22:35:39.142  INFO 24924 --- [main] com.example.demo.FindMyStuffApplication  : Starting FindMyStuffApplication on LAPTOP-27VT8PQ1 with PID 24924 (started by ktrom in C:\Users\ktrom\Desktop\GitHub\FindMyStuff\FindMyStuff\Back End\FindMyStuff)
-2020-05-23 22:35:39.147  INFO 24924 --- [main] com.example.demo.FindMyStuffApplication  : No active profile set, falling back to default profiles: default
-2020-05-23 22:35:40.306  INFO 24924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-05-23 22:35:40.401  INFO 24924 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78ms. Found 1 JPA repository interfaces.
-2020-05-23 22:35:40.885  INFO 24924 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-23 22:35:41.967  INFO 24924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-23 22:35:41.999  INFO 24924 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-23 22:35:42.000  INFO 24924 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-05-23 22:35:42.454  INFO 24924 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-23 22:35:42.455  INFO 24924 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3215 ms
-2020-05-23 22:35:42.945  INFO 24924 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-05-23 22:35:43.107  INFO 24924 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-05-23 22:35:43.339  INFO 24924 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-05-23 22:35:43.499  INFO 24924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-05-23 22:35:43.781  INFO 24924 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-05-23 22:35:43.817  INFO 24924 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-05-23 22:35:44.484  INFO 24924 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.example.demo.database.User (class must be instantiated by Interceptor)
-2020-05-23 22:35:45.057  INFO 24924 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-05-23 22:35:45.080  INFO 24924 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-05-23 22:35:46.068  WARN 24924 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-05-23 22:35:46.476  INFO 24924 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-23 22:35:47.026  INFO 24924 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-23 22:35:47.028  INFO 24924 --- [main] com.example.demo.FindMyStuffApplication  : Started FindMyStuffApplication in 8.536 seconds (JVM running for 9.687)
-2020-05-23 23:06:22.998  INFO 8576 --- [main] com.example.demo.FindMyStuffApplication  : Starting FindMyStuffApplication on LAPTOP-27VT8PQ1 with PID 8576 (started by ktrom in C:\Users\ktrom\Desktop\GitHub\FindMyStuff\FindMyStuff\Back End\FindMyStuff)
-2020-05-23 23:06:23.003  INFO 8576 --- [main] com.example.demo.FindMyStuffApplication  : No active profile set, falling back to default profiles: default
-2020-05-23 23:06:23.981  INFO 8576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2020-05-23 23:06:24.067  INFO 8576 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62ms. Found 1 JPA repository interfaces.
-2020-05-23 23:06:24.523  INFO 8576 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2020-05-23 23:06:25.431  INFO 8576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2020-05-23 23:06:25.464  INFO 8576 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2020-05-23 23:06:25.465  INFO 8576 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
-2020-05-23 23:06:25.904  INFO 8576 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2020-05-23 23:06:25.905  INFO 8576 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2813 ms
-2020-05-23 23:06:26.402  INFO 8576 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2020-05-23 23:06:26.719  INFO 8576 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
-2020-05-23 23:06:27.156  INFO 8576 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
-2020-05-23 23:06:27.392  INFO 8576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2020-05-23 23:06:27.841  INFO 8576 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2020-05-23 23:06:27.927  INFO 8576 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
-2020-05-23 23:06:29.037  INFO 8576 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.example.demo.database.User (class must be instantiated by Interceptor)
-2020-05-23 23:06:29.796  INFO 8576 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2020-05-23 23:06:29.814  INFO 8576 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2020-05-23 23:06:30.807  WARN 8576 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2020-05-23 23:06:31.143  INFO 8576 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2020-05-23 23:06:31.651  INFO 8576 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2020-05-23 23:06:31.654  INFO 8576 --- [main] com.example.demo.FindMyStuffApplication  : Started FindMyStuffApplication in 9.262 seconds (JVM running for 9.95)
-2020-05-23 23:09:01.882  INFO 8576 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-05-23 23:09:01.884  INFO 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2020-05-23 23:09:01.904  INFO 8576 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-05-24 00:17:43.824  INFO 16372 --- [main] com.example.demo.FindMyStuffApplication  : Starting FindMyStuffApplication on LAPTOP-27VT8PQ1 with PID 16372 (started by ktrom in C:\Users\ktrom\Desktop\GitHub\FindMyStuff\FindMyStuff\Back End\FindMyStuff)
+2020-05-24 00:17:43.839  INFO 16372 --- [main] com.example.demo.FindMyStuffApplication  : No active profile set, falling back to default profiles: default
+2020-05-24 00:17:45.162  INFO 16372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-24 00:17:45.257  INFO 16372 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+2020-05-24 00:17:45.749  INFO 16372 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-24 00:17:46.646  INFO 16372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-05-24 00:17:46.672  INFO 16372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-24 00:17:46.673  INFO 16372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-05-24 00:17:46.974  INFO 16372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-24 00:17:46.976  INFO 16372 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3030 ms
+2020-05-24 00:17:47.265  INFO 16372 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-24 00:17:47.397  INFO 16372 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.10.Final}
+2020-05-24 00:17:47.646  INFO 16372 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-24 00:17:47.847  INFO 16372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-24 00:17:48.146  INFO 16372 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-24 00:17:48.183  INFO 16372 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-05-24 00:17:48.932  INFO 16372 --- [main] org.hibernate.tuple.PojoInstantiator     : HHH000182: No default (no-argument) constructor for class: com.example.demo.database.User (class must be instantiated by Interceptor)
+2020-05-24 00:17:49.329  INFO 16372 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-24 00:17:49.336  INFO 16372 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-24 00:17:49.907  WARN 16372 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-24 00:17:50.184  INFO 16372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-05-24 00:17:50.850  INFO 16372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
