@@ -35,4 +35,10 @@ public class UserController {
         Long userId = Long.parseLong(id);
         userService.deleteById(userId);
     }
+
+    @PostMapping("/users/create")
+    public void createUser(@RequestParam String username, @RequestParam String password)
+    {
+        userService.addNewUser(username, password);
+    }
 }

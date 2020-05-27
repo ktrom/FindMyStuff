@@ -34,4 +34,10 @@ public class UserService {
         userRepository.deleteById(userId);
     }
 
+    public void addNewUser(String username, String password)
+    {
+        User u = new User(username, password);
+        userRepository.save(u);
+    }
+
 }
