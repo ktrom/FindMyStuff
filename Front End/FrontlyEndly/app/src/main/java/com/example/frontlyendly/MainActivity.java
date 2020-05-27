@@ -22,10 +22,6 @@ public class MainActivity extends AppCompatActivity {
         editpassword = (TextView) findViewById(R.id.edit_password);
     }
 
-    public void dipshits(View view)
-    {
-
-    }
     public void loginAction(View view)
     {
         String username = getUsername();
