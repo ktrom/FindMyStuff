@@ -17,12 +17,13 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String email;
+    private String username, password;
 
     public User() {}
 
-    public User(String email) {
-        this.email = email;
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
     }
 
     public Long getId() {
@@ -33,14 +34,20 @@ public class User {
         this.id = id;
     }
 
-    public String getEmail() {
-
-        return email;
+    public String getUsername() {
+        return username;
     }
 
-    public void setEmail(String email) {
+    public void setUsername(String username){
+        this.username = username;
+    }
 
-        this.email = email;
+    public String getPassword(){
+        return password;
+    }
+
+    public void setPassword(String password){
+        this.password = password;
     }
 
     @Override
@@ -49,19 +56,21 @@ public class User {
         if (o == null || getClass() != o.getClass()) return false;
         User user = (User) o;
         return Objects.equals(id, user.id) &&
-                Objects.equals(email, user.email);
+                Objects.equals(username, user.username) &&
+                Objects.equals(password, user.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, email);
+        return Objects.hash(id, username, password);
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("User{");
         sb.append("id=").append(id);
-        sb.append(", email='").append(email).append('\'');
+        sb.append(", username='").append(username).append('\'');
+        sb.append(", password='").append(password).append('\'');
         sb.append('}');
         return sb.toString();
     }

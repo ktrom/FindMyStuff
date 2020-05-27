@@ -24,6 +24,14 @@ public class UserService {
         return users;
     }
 
+    public Long count() {
 
+        return userRepository.count();
+    }
+
+    public void deleteById(Long userId) {
+
+        userRepository.deleteById(userId);
+    }
 
 }
