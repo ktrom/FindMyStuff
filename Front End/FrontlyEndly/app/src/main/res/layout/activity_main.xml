@@ -26,17 +26,16 @@
         android:id="@+id/edit_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="43dp"
+        android:layout_marginTop="63dp"
         android:ems="10"
         android:hint="@string/edit_password"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_username" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/butt_ton"
         android:layout_width="331dp"
         android:layout_height="219dp"
         android:layout_marginBottom="120dp"

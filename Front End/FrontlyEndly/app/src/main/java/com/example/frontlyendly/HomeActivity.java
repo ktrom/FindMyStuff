@@ -42,50 +42,49 @@ public class HomeActivity extends AppCompatActivity {
 //                    }
 //                });
 
-        StringRequest stringRequest;
-        firstButton = findViewById(R.id.first_button);
-        firstButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-               stringRequest = new StringRequest(Request.Method.GET,"http://192.168.1.6:8080/test2" ,
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                // Display the first 500 characters of the response string.
-                                textView.setText(response);
-                            }
-                        }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        textView.setText(error.getMessage());
-                    }
-                });
-            }
-        });
-        secondButton = findViewById(R.id.second_button);
-        firstButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view)
-            {
-                stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.6:8080/test3",
-                        new Response.Listener<String>() {
-                            @Override
-                            public void onResponse(String response) {
-                                // Display the first 500 characters of the response string.
-                                textView.setText(response);
-                            }
-                        }, new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        textView.setText(error.getMessage());
-                    }
-                });
+//        StringRequest stringRequest;
+//        firstButton = findViewById(R.id.first_button);
+//        firstButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//               stringRequest = new StringRequest(Request.Method.GET,"http://192.168.1.6:8080/test2" ,
+//                        new Response.Listener<String>() {
+//                            @Override
+//                            public void onResponse(String response) {
+//                                // Display the first 500 characters of the response string.
+//                                textView.setText(response);
+//                            }
+//                        }, new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        textView.setText(error.getMessage());
+//                    }
+//                });
+//            }
+//        });
+//        secondButton = findViewById(R.id.second_button);
+//        firstButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view)
+//            {
+//                stringRequest = new StringRequest(Request.Method.GET, "http://192.168.1.6:8080/test3",
+//                        new Response.Listener<String>() {
+//                            @Override
+//                            public void onResponse(String response) {
+//                                // Display the first 500 characters of the response string.
+//                                textView.setText(response);
+//                            }
+//                        }, new Response.ErrorListener() {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        textView.setText(error.getMessage());
+//                    }
+//                });
+//
+//            }
+//        });
 
-            }
-        });
-
-        MySingleton.getInstance(this).addToRequestQueue(stringRequest);
     }
 
     public void setText(String text)
