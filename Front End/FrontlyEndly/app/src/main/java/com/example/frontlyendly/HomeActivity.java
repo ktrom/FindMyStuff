@@ -31,37 +31,37 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         textView = (TextView)findViewById(R.id.test_text);
-        RequestQueue queue = Volley.newRequestQueue(this);
-        String url = "http://192.168.1.6:8080/users/create";
-        StringRequest postRequest = new StringRequest(Request.Method.POST, url,
-                new Response.Listener<String>()
-                {
-                    @Override
-                    public void onResponse(String response) {
-                        // response
-                        Log.d("Response", response);
-                    }
-                },
-                new Response.ErrorListener()
-                {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        // error
-                        Log.d("Error.Response", error.getMessage());
-                    }
-                }
-        ) {
-            @Override
-            protected Map<String, String> getParams()
-            {
-                Map<String, String>  params = new HashMap<String, String>();
-                params.put("username", "kyle");
-                params.put("password", "yavitch");
-
-                return params;
-            }
-        };
-        queue.add(postRequest);
+//        RequestQueue queue = Volley.newRequestQueue(this);
+//        String url = "http://192.168.1.6:8080/users/create";
+//        StringRequest postRequest = new StringRequest(Request.Method.POST, url,
+//                new Response.Listener<String>()
+//                {
+//                    @Override
+//                    public void onResponse(String response) {
+//                        // response
+//                        Log.d("Response", response);
+//                    }
+//                },
+//                new Response.ErrorListener()
+//                {
+//                    @Override
+//                    public void onErrorResponse(VolleyError error) {
+//                        // error
+//                        Log.d("Error.Response", error.getMessage());
+//                    }
+//                }
+//        ) {
+//            @Override
+//            protected Map<String, String> getParams()
+//            {
+//                Map<String, String>  params = new HashMap<String, String>();
+//                params.put("username", "kyle");
+//                params.put("password", "yavitch");
+//
+//                return params;
+//            }
+//        };
+//        queue.add(postRequest);
 //        StringRequest stringRequest;
 //        firstButton = findViewById(R.id.first_button);
 //        firstButton.setOnClickListener(new View.OnClickListener() {
