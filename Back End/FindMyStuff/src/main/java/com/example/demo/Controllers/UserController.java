@@ -41,4 +41,5 @@ public class UserController {
     {
         userService.addNewUser(username, password);
     }
+
 }
